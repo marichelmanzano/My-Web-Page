@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorite Foods</title>
+  <style>
+   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+header {
+  background:#258375;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 0.8rem;
+  text-decoration: solid;
+  text-wrap: inherit;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  font-style: italic;
+  background-color: bisque;
+}
+.card {
+  border: 1px solid #2ab35e;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height:4;
+
+}
+footer {
+  background: #23695e;
+  color: white;
+  text-align: center;
+  padding: 0.7rem;
+  font-size: 30px;
+  font-style: oblique;
+  font-display: block;
+}
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+}
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Favorite Foods</h1>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Drinks</h1>
+      <p>Iced coffee</p>
+      <p>Blue Lemonade</p>  
+      <p>Strawberry Juice</p>
+      <p>Water</p>
+    </section>
+
+    <section class="card">
+      <h1>Dessert</h1>
+      <p>Cake</p>
+      <p>Maja Blanca</p>  
+      <p>ice cream</p>
+      <p>Buko Salad</p>
+    </section>
+
+    <section class="card">
+      <h1>Fruits</h1>
+      <p>Water Melon</p>
+      <p>Banana</p>  
+      <p>Orange</p>
+      <p>Lansones</p>
+    </section>
+  </main>
+  <footer>
+    <p>"Healthy food, Healthy Life</p>
+  </footer>
+
+</body>
+</html>
